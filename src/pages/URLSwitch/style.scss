@@ -1,0 +1,83 @@
+.side-panel {
+    float: left;
+    width: 30%;
+    .search-tab {
+        width: 70%;
+        float: left;
+        padding: 15px;
+        input {
+            border-radius: 15px;
+            border: 1px solid black;
+            padding: 15px;
+            width: 95%;   
+        }
+    }
+    .search-icon{
+        width: 14%;
+        float: right;
+        /* padding-top: 15px; */
+        border: 1px solid black;
+        border-radius: 30%;
+        margin: 15px;
+        img {
+            height: 40px;
+            margin-left: 5px;
+        }
+    }
+    hr {
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+    }
+    .url-list{
+        cursor: pointer;
+        span{
+            float: right;
+        }
+        .url{
+            border-radius: 20px;
+            border: 1px solid black;
+            padding: 20px;
+            width: 80%;
+            height: 30px;
+            margin: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: bold;
+            &.active {
+                background-color: lightgray ;
+                box-shadow: 5px 5px #888888;
+            }
+        }
+    }
+}
+.side-panel:after {
+    content: "";
+    background-color: #000;
+    position: fixed;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 30%;
+  }
+.content-container {
+    float: right;
+    width: 65%;
+    padding-left: 20px;
+    .feeds-container {
+        margin-top: 35px;
+        .feed-box{
+            border: 1px solid black;
+            margin-bottom: 40px;
+            height: 120px;
+            overflow: hidden;
+            margin-right: 50px;
+            padding: 40px;
+            box-shadow: 5px 5px lightgrey;
+        }
+    }
+    h1 {
+        text-align: center;
+    }
+}
